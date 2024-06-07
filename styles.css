@@ -1,0 +1,13 @@
+.center{
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  border: 2px solid rgb(0, 255, 132);
+  width:fit-content;
+  padding: 40px 10px 40px 20px;
+  border-radius: 10px;
+  box-shadow: 3px 2px green;
+}
+.card-img-top{
+  width: 50% !important;
+}
