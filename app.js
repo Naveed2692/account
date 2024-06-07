@@ -76,16 +76,22 @@ var signNow= document.getElementById('signin');
   
 // }
 signNow.addEventListener('click',()=>{
+  var email = document.getElementById('email').value;
+  var password= document.getElementById('pass').value;
   signInWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     console.log("123");
     // Signed in 
     const user = userCredential.user;
     // ...
+    alert("Sign in successfully")
+    window.location.href= 'main.html';
+
   })
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
+    alert("Password Or Email is incorrect")
   });
 })
 
