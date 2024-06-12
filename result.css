@@ -1,0 +1,23 @@
+.main{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+.body{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+    border: 2px solid black;
+}
+table{
+    margin: 0 auto;
+    width: 80%;
+}
+.text{
+    margin-left: 5%;
+}
+
