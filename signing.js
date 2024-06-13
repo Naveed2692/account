@@ -11,8 +11,14 @@ signInWithEmailAndPassword(auth, loginEmail, loginPass)
     // Signed in 
     const user = userCredential.user;
     // ...
+  if(user.emailVerified== true){
     alert('Sign in successfully')
-    window.location.href='form.html';
+    window.location.href='main.html';
+  }else{
+    alert("Kindly verify email to login")
+  }
+
+   
   })
   .catch((error) => {
     const errorCode = error.code;

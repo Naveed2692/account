@@ -1,5 +1,5 @@
 import { auth } from "./firebase.mjs";
-import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { createUserWithEmailAndPassword , sendEmailVerification } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
 var createAcc= document.getElementById('signup');
 createAcc.addEventListener('click',(event)=>{
@@ -11,7 +11,12 @@ createUserWithEmailAndPassword(auth, email, password)
     // Signed up 
     const user = userCredential.user;
     // ...
-    alert('Sign up successfully Click on Login to signin')
+    alert('Sign up successfully Please verify email to Login');
+    sendEmailVerification(auth.currentUser)
+    .then(() => {
+      // Email verification sent!
+      // ...
+    });
     console.log(user);
   })
   .catch((error) => {
