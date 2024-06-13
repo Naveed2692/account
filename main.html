@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Navbar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="email" name="email" id="email" autocomplete="email" placeholder="Email" required="">
+					<input type="password" name="pswd" id="password" autocomplete="new-password" placeholder="Password" required="">
+					<button id="signup">Sign up</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="email" id="loginEmail" autocomplete="email" placeholder="Email" required="">
+					<input type="password" name="pswd" id="loginPass" autocomplete="current-password" placeholder="Password" required="">
+					<button id="login">Login</button>
+				</form>
+			</div>
+	</div>
+    <script type="module" src="index.js"></script>
+    <script type="module" src="signing.js"></script>
+</body>
+</html>
